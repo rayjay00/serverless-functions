@@ -15,7 +15,7 @@ jobs:
       - name: Create lambda folder
         run: mkdir lambda
       - name: Install dependencies
-        run: cd src && npm install
+        run: npm install
       - name: Zip File
         run: zip -r ./lambda/getSongs.zip *
       - name: Deploy to S3
